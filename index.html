@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Scanner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script src="https://unpkg.com/qrcode"></script>
+    <div class="container">
+      <h1>QR Code Scanner</h1>
+      <video id="qr-video" class="qr-video" width="300" height="300" hidden></video>
+      <canvas id="qr-canvas" class="qr-canvas" width="300" height="300"></canvas>
+      <div id="qr-result" class="qr-result">
+        <p><strong>Data:</strong> <span id="outputData"></span></p>
+      </div>
+    </div>
+    <script src="qrCodeScanner.js"></script>
+  </body>
+</html>
